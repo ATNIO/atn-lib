@@ -1,0 +1,22 @@
+{
+  "name": "light_client_lib",
+  "version": "1.0.0",
+  "description": "a light client lib for Dbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "ai",
+    "client",
+    "lib",
+    "dbot"
+  ],
+  "author": "hujw",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "web3": "^1.0.0-beta.26"
+  }
+}
