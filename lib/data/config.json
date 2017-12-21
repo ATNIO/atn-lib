@@ -6,6 +6,8 @@
   "aimarket": "http://127.0.0.1:4000/bill/api/v1/",
   "apis": {
     "getAiList": "getAiList",
-    "getAiInfo": "getAiInfo"
+    "getAiInfo": "getAiInfo",
+    "callAI": "callAI",
+    "getPrice": "getPrice"
   }
 }
