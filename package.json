@@ -12,7 +12,7 @@
     "lib",
     "dbot"
   ],
-  "author": "hujw",
+  "author": "ATNIO",
   "license": "ISC",
   "dependencies": {
     "request": "^2.83.0",

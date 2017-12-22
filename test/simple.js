@@ -6,20 +6,19 @@ var lib = new AtnLib(
   "http://118.31.18.101:4045"
 );
 
-lib.getAiList();
+// lib.getAiList();
 // lib.getAiInfo(1);
-// lib.openChannel('0x9765e2d8467334198b402e4d4551dd49e63327ec', 100);
-// lib.topUpChannel('0x9765e2d8467334198b402e4d4551dd49e63327ec', 5122147, 1);
-// lib.closeChannel('http://127.0.0.1:5000',"0x9765e2d8467334198b402e4d4551dd49e63327ec", 5122475, 0)
-// lib.getChannels('http://127.0.0.1:5000', 5122145)
-// lib.settleChannel('0x9765e2d8467334198b402e4d4551dd49e63327ec' ,5122145)
-// lib.getPrice('xiaoi')
+// lib.openChannel('0x9765e2d8467334198b402e4d4551dd49e63327ec', 1);
+// lib.topUpChannel('0x9765e2d8467334198b402e4d4551dd49e63327ec', 5138755, 1);
+// lib.closeChannel('http://127.0.0.1:3000',"0x9765e2d8467334198b402e4d4551dd49e63327ec", 5138755, 0)
+// lib.getChannels('http://127.0.0.1:3000', 5138412)
+// lib.getPrice('http://127.0.0.1:3000', 'xiaoi')
 // lib.callAI(
-//   '',
+//   'http://127.0.0.1:3000',
 //   'xiaoi',
-//   'hello',
+//   'hi',
 //   '0x9765e2d8467334198b402e4d4551dd49e63327ec',
-//   5131738,
-//   6,
+//   5138412,
+//   5,
 //   1
 // )
