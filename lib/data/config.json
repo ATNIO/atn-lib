@@ -1,9 +1,12 @@
 {
   "gas": 5000000,
   "gasPrice": 28000000000,
+  "usingUraiden": "1",
   "uraiden": "0x1ea293cb5a28b2447383056b23ec79d768afa5c0",
   "atn": "0xa649c2ba1fbf6984e934cea9dc6c7c2a7af379f7",
-  "aimarket": "http://127.0.0.1:4000/bill/api/1/",
+  "biz": "0x79194dcdb3047fb3f721b344bdfc340d3082387e",
+  "consumer": "0xd40cfd88cca43c2f17174c170de559140e324e2b",
+  "aimarket": "http://118.31.18.101:4000/bill/api/1/",
   "apis": {
     "getAiList": "getAiList",
     "getAiInfo": "getAiInfo"
