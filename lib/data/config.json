@@ -4,8 +4,8 @@
   "usingUraiden": "1",
   "uraiden": "0x1ea293cb5a28b2447383056b23ec79d768afa5c0",
   "atn": "0xa649c2ba1fbf6984e934cea9dc6c7c2a7af379f7",
-  "biz": "0x79194dcdb3047fb3f721b344bdfc340d3082387e",
-  "consumer": "0xd40cfd88cca43c2f17174c170de559140e324e2b",
+  "biz": "0x99f42c7c49f32b2ba8b6037ca513f81724e800dc",
+  "consumer": "0x853917d98bd9e60d9e26e83fd757fd4adc098532",
   "aimarket": "http://118.31.18.101:4000/bill/api/1/",
   "apis": {
     "getAiList": "getAiList",
