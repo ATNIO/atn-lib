@@ -13,26 +13,25 @@ var lib = new AtnLib(
 // })
 
 async function run() {
-  await lib.getAiList();
-  await lib.getAiInfo(1);
-  await lib.openChannel('0x9765e2d8467334198b402e4d4551dd49e63327ec', 1);
-  await lib.getChannels('http://127.0.0.1:3000', 5437663);
-  await lib.topUpChannel('0x9765e2d8467334198b402e4d4551dd49e63327ec', 5437663, 1)
-  await lib.closeChannel('http://127.0.0.1:3000', "0x9765e2d8467334198b402e4d4551dd49e63327ec", 5138755, 0)
-  await lib.getChannels('http://127.0.0.1:3000', 5176704)
-  await lib.getPrice('http://127.0.0.1:3000', 'xiaoi')
-  await lib.callAI(
-    'http://127.0.0.1:3000',
-    'xiaoi',
-    'hi',
-    '0x9765e2d8467334198b402e4d4551dd49e63327ec',
-    5176704,
-    2,
-    1
-  )
-  await lib.directlyCallAI('XIAO_I', {
-    question: "你好!"
-  })
+  // await lib.getAiList();
+  // await lib.getAiInfo(1);
+  // await lib.openChannel('0x9765e2d8467334198b402e4d4551dd49e63327ec', 1);
+  // await lib.getChannels('http://127.0.0.1:4010', 5437663);
+  // await lib.topUpChannel('0x9765e2d8467334198b402e4d4551dd49e63327ec', 5437663, 1)
+  // await lib.closeChannel('http://127.0.0.1:3000', "0x9765e2d8467334198b402e4d4551dd49e63327ec", 5138755, 0)
+  // await lib.getPrice('http://127.0.0.1:4018', 'azureVision')
+  // await lib.callAI(
+  //   'http://127.0.0.1:3000',
+  //   'xiaoi',
+  //   'hi',
+  //   '0x9765e2d8467334198b402e4d4551dd49e63327ec',
+  //   5176704,
+  //   2,
+  //   1
+  // )
+  // await lib.directlyCallAI('xiaoi', {
+  //   question: "你好!"
+  // })
 }
 
 run();
