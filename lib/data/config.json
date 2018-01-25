@@ -5,7 +5,7 @@
   "atn": "0xa649c2ba1fbf6984e934cea9dc6c7c2a7af379f7",
   "biz": "0x99f42c7c49f32b2ba8b6037ca513f81724e800dc",
   "consumer": "0x853917d98bd9e60d9e26e83fd757fd4adc098532",
-  "aimarket": "http://118.31.18.101:4000/bill/api/1/",
+  "aimarket": "http://127.0.0.1:4000/bill/api/1/",
   "apis": {
     "getAiList": "getAiList",
     "getAiInfo": "getAiInfo"
