@@ -43,6 +43,7 @@ async function run() {
 
     const resDirectly = await lib.directlyCallAI(aiInfo.name, aiInfo.bill_kovan_addr, input);
     console.log("resDirectly", resDirectly);
+    process.exit()
   }, 5000);
 }
 
