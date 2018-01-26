@@ -7,7 +7,7 @@ const lib = new AtnLib(
 
 async function run() {
   const aiId = 5;
-  const deposit = 1;
+  const deposit = 9;
   const allAi = await lib.getAiList();
   console.log("allAi", allAi)
   const aiInfo = await lib.getAiInfo(aiId);
@@ -18,6 +18,9 @@ async function run() {
   const topupChannel = await lib.topUpChannel(aiInfo.dbot_receiver, block, deposit);
   console.log("topupChannel", topupChannel);
 
+  let input = {
+    [aiInfo.params[0].name]: aiInfo.params[0].example
+  };
   setTimeout(async() => {
     let balance = 0;
     const fee = await lib.getPrice(aiInfo.dbot_url, aiInfo.name);
@@ -25,7 +28,7 @@ async function run() {
     const res = await lib.callAI(
       aiInfo.dbot_url,
       aiInfo.name,
-      'hi',
+      input,
       aiInfo.dbot_receiver,
       block,
       balance,
@@ -38,17 +41,9 @@ async function run() {
     const closeRes = await lib.closeChannel(aiInfo.dbot_url, aiInfo.dbot_receiver, block, fee)
     console.log("closeRes", closeRes);
 
-    const resDirectly = await lib.directlyCallAI('xiaoi', '0x77f0c5deccf15868da16d89dc67c4ab0c6aa0d19', {
-      question: "hi"
-    })
+    const resDirectly = await lib.directlyCallAI(aiInfo.name, aiInfo.bill_kovan_addr, input);
     console.log("resDirectly", resDirectly);
   }, 5000);
-
-  // await lib.directlyCallAI('baiduOcr', '0xa99782d73844729822603bf1a7574389dd1427fc', {
-  //   method: 'idcard',
-  //   url: 'http://imgsrc.baidu.com/imgad/pic/item/bd3eb13533fa828bbd0022d9f61f4134970a5aec.jpg'
-  // })
-
 }
 
 
