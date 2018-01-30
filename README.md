@@ -1,4 +1,4 @@
-# atn-lib v0.2.0-alpha
+# atn-lib v0.1.0-beta
 A light client lib for consumer to call ATN AI services.
 
 ## Installation
