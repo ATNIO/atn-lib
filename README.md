@@ -75,7 +75,7 @@ see in [simple.js](test/simple.js)
   none
 #### Returns
 `Array`: The list of all AI:
-* <span name="ai_object">`AI Object`</span>
+* <a name="ai_object">`AI Object`</a>
     * <a name="ai_id">`id`</a>-`Number`: The id of AI
     * `type`-`String`: The type of AI
     * <a name="ai_name">`name`-`String`</a>: The name of AI
@@ -83,10 +83,10 @@ see in [simple.js](test/simple.js)
       * `'0'`: free
       * `'1'`: times
       * `'2'`: interval
-    * <span id="bill_kovan_addr">`bill_kovan_addr`</span>-`String`: The address of billing contract in Kovan
-    *  <span id="dbot_url">`dbot_url`</span>-`String`: Host and port dbot serves requests on  
-    * <span id="dbot_receiver">`dbot_receiver`</span>-`String`: The address of dbot provider
-    * <span id="ai_params">`params`</span>-`String`: The AI's parameters 
+    * <a id="bill_kovan_addr">`bill_kovan_addr`</a>-`String`: The address of billing contract in Kovan
+    *  <a id="dbot_url">`dbot_url`</a>-`String`: Host and port dbot serves requests on  
+    * <a id="dbot_receiver">`dbot_receiver`</a>-`String`: The address of dbot provider
+    * <a id="ai_params">`params`</a>-`String`: The AI's parameters 
       * `name`-`String`: The key of parameter
       * `type`-`String`: The type of parameter
       * `required`-`Number`: The parameter is required or not
@@ -107,12 +107,12 @@ see in [simple.js](test/simple.js)
 
 2. `deposit`-`Number`: Deposit value(number of ATN)
 #### Returns
-<span id="channel_info">`Result`</span>: The opened channel info
+<a id="channel_info">`Result`</a>: The opened channel info
   * `0`: The key of channel
   * `1`: The balance of deposit value
   * `2`: Settle block number of closing requests
   * `3`: Closing balance of closing requests
-  * <span id="opening_block_number">`4`</span>: Opening block number 
+  * <a id="opening_block_number">`4`</a>: Opening block number 
   * `5`: The address of receiver 
   * `6`: The address of sender
 
@@ -140,7 +140,7 @@ see in [simple.js](test/simple.js)
   * `sender`: The address of sender
   * `deposit`: Deposit value(number of ATN) of the channel
   * [open_block_number](#opening_block_number): Opening block number
-  *  <span id="balance">`balance`</span>: The number of ATN which the channel used
+  *  <a id="balance">`balance`</a>: The number of ATN which the channel used
 
 #### closeChannel
 `lib.closeChannel(dbot_url, receiver, block, balance)`
@@ -158,7 +158,7 @@ see in [simple.js](test/simple.js)
 1. [dbot_url](#dbot_url)-`String`: Host and port dbot serves requests on 
 2. [ai_name](#ai_name)-`String`: The name of AI
 #### Returns
-<span id="fee">`fee`</span>: The cost of calling AI
+<a id="fee">`fee`</a>: The cost of calling AI
 
 #### getPrice
 `lib.callAI(dbot_url, ai_name, input, receiver, block, balance, price)`
