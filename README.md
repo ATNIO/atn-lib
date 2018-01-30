@@ -69,7 +69,7 @@ Calling the AI
 ## Example
 see in [simple.js](test/simple.js)
 ## API in Detail
-#### getAiList
+### getAiList
 `lib.getAiList()`
 #### Parameters
   none
@@ -93,14 +93,14 @@ see in [simple.js](test/simple.js)
         * `1`: required
         * `0`: options
   
-#### getAiInfo
+### getAiInfo
 `lib.getAiInfo(id)`
 #### Parameters
 [id](#ai_id)-`Number`: The id of AI 
 #### Returns
 [AI Object](#ai_object)
 
-#### openChannel
+### openChannel
 `lib.openChannel(receiver, deposit)`
 #### Parameters
 1. [receiver](#dbot_receiver)-`String`: The address of dbot provider
@@ -116,7 +116,7 @@ see in [simple.js](test/simple.js)
   * `5`: The address of receiver 
   * `6`: The address of sender
 
-#### topUpChannel
+### topUpChannel
 `lib.topUpChannel(receiver, block, deposit)`
 #### Parameters
 1. [receiver](#dbot_receiver)-`String`: The address of dbot provider
@@ -125,7 +125,7 @@ see in [simple.js](test/simple.js)
 #### Returns
 [Result](#channel_info): The topup channel info
 
-#### getChannels
+### getChannels
 `lib.getChannels(dbot_url, block, status)`
 #### Parameters
 1. [dbot_url](#dbot_url)-`String`: Host and port dbot serves requests on 
@@ -142,7 +142,7 @@ see in [simple.js](test/simple.js)
   * [open_block_number](#opening_block_number): Opening block number
   *  <a id="balance">`balance`</a>: The number of ATN which the channel used
 
-#### closeChannel
+### closeChannel
 `lib.closeChannel(dbot_url, receiver, block, balance)`
 #### Parameters
 1. [dbot_url](#dbot_url)-`String`: Host and port dbot serves requests on 
@@ -152,7 +152,7 @@ see in [simple.js](test/simple.js)
 #### Returns
 `receipt`: The receipt of close channel
 
-#### getPrice
+### getPrice
 `lib.getPrice(dbot_url, ai_name)`
 #### Parameters
 1. [dbot_url](#dbot_url)-`String`: Host and port dbot serves requests on 
@@ -160,7 +160,7 @@ see in [simple.js](test/simple.js)
 #### Returns
 <a id="fee">`fee`</a>: The cost of calling AI
 
-#### getPrice
+### callAI
 `lib.callAI(dbot_url, ai_name, input, receiver, block, balance, price)`
 #### Parameters
 1. [dbot_url](#dbot_url)-`String`: Host and port dbot serves requests on 
@@ -173,14 +173,14 @@ see in [simple.js](test/simple.js)
 #### Returns
 `Result`: The result of calling AI
 
-#### directlyGetPrice
+### directlyGetPrice
 `lib.directlyGetPrice(ai_name)`
 #### Parameters
 1. [ai_name](#ai_name)-`String`: The name of AI
 #### Returns
 `fee`: The cost of calling AI
 
-#### directlyCallAI
+### directlyCallAI
 `lib.directlyCallAI(ai_name, bill_addr, input)`
 **Note**: In this way, you should use ws interface to init the lib
 #### Parameters
