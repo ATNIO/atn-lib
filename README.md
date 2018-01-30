@@ -9,7 +9,7 @@ $ npm i --save web3@1.0.0-beta.28
 ```
 
 In Node.js:
-```
+```javascript
 var AtnLib = require('atn-lib');
 const lib = new AtnLib(
 "yourPrivateKey",        // private key 
@@ -41,7 +41,7 @@ Getting the price of the AI
 
 **Step 5:**
 Calling the AI
-```
+```javascript
 lib.callAI(
       aiInfo.dbot_url,
       aiInfo.name,
@@ -74,15 +74,15 @@ see in [simple.js](test/simple.js)
 #### Parameters
   none
 #### Returns
-`Array`:The list of all AI:
-* <span id="ai_object">`AI Object`</span>
+`Array`: The list of all AI:
+* <span name="ai_object">`AI Object`</span>
     * <span id="ai_id">`id`</span>-`Number`: The id of AI
     * `type`-`String`: The type of AI
     * <span id="ai_name">`name`-`String`</span>: The name of AI
     * `bill_type`-`String`: The bill type of AI
-      * `'0'`:free
-      * `'1'`:times
-      * `'2'`:interval
+      * `'0'`: free
+      * `'1'`: times
+      * `'2'`: interval
     * <span id="bill_kovan_addr">`bill_kovan_addr`</span>-`String`: The address of billing contract in Kovan
     *  <span id="dbot_url">`dbot_url`</span>-`String`: Host and port dbot serves requests on  
     * <span id="dbot_receiver">`dbot_receiver`</span>-`String`: The address of dbot provider
