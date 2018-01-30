@@ -182,6 +182,7 @@ see in [simple.js](test/simple.js)
 
 ### directlyCallAI
 `lib.directlyCallAI(ai_name, bill_addr, input)`
+
 **Note**: In this way, you should use ws interface to init the lib
 #### Parameters
 1. [ai_name](#ai_name "ai_name")-`String`: The name of AI
