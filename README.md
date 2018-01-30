@@ -12,7 +12,7 @@ In Node.js:
 ```javascript
 var AtnLib = require('atn-lib');
 const lib = new AtnLib(
-"yourPrivateKey",        // private key 
+  "yourPrivateKey",        // private key 
   "rpcProvider"          // host and port Parity/Geth serves RPC requests on
 );
 ```
@@ -41,7 +41,7 @@ Getting the price of the AI
 
 **Step 5:**
 Calling the AI
-```javascript
+```
 lib.callAI(
       aiInfo.dbot_url,
       aiInfo.name,
@@ -184,7 +184,7 @@ see in [simple.js](test/simple.js)
 `lib.directlyCallAI(ai_name, bill_addr, input)`
 **Note**: In this way, you should use ws interface to init the lib
 #### Parameters
-1. [ai_name](#ai_name)-`String`: The name of AI
+1. [ai_name](#ai_name "ai_name")-`String`: The name of AI
 2. [bill_addr](#bill_kovan_addr)-`String`: The address of billing contract in Kovan
 3. [input](#ai_params)-`Number`: An object build with ai parameters
 #### Returns
