@@ -76,9 +76,9 @@ see in [simple.js](test/simple.js)
 #### Returns
 `Array`: The list of all AI:
 * <span name="ai_object">`AI Object`</span>
-    * <span id="ai_id">`id`</span>-`Number`: The id of AI
+    * <span name="ai_id">`id`</span>-`Number`: The id of AI
     * `type`-`String`: The type of AI
-    * <span id="ai_name">`name`-`String`</span>: The name of AI
+    * <span name="ai_name">`name`-`String`</span>: The name of AI
     * `bill_type`-`String`: The bill type of AI
       * `'0'`: free
       * `'1'`: times
