@@ -1,8 +1,7 @@
 const AtnLib = require('../')
 const lib = new AtnLib(
-  "c431bc51736dcacb1f89369fca31f2e252a08c3abe875aba6af607460f42986b",
-  // "https://kovan.infura.io/"
-  "ws://118.31.18.101:4046"
+  "***********************",
+  "https://kovan.infura.io"
 );
 
 async function run() {
